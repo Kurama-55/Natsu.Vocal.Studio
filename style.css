@@ -262,8 +262,10 @@ section { padding: 45px 0; }
 .btn-outline:hover { background: var(--text-navy); color: white; }
 
 /* Instructor Layout: Header, Photo, Kurayan side-by-side */
-.teacher-flex { display: grid; grid-template-columns: 1.2fr 1.8fr; gap: 4rem; align-items: start; }
-.teacher-avatars { display: flex; gap: 6rem; align-items: end; padding-top: 6rem; }
+.teacher-flex { display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: center; }
+.teacher-info { justify-self: end; text-align: left; max-width: 500px; }
+.teacher-info .section-title.left { margin-bottom: 0.5rem; }
+.teacher-avatars { display: flex; gap: 5rem; align-items: center; justify-content: flex-start; margin-top: 1rem; }
 .avatar-item { text-align: center; }
 .instructor-avatar, .guide-avatar { 
     width: 200px; height: 200px; 
@@ -275,11 +277,25 @@ section { padding: 45px 0; }
 .instructor-avatar:hover, .guide-avatar:hover { transform: translateY(-10px); }
 .avatar-label { font-size: 1rem; color: var(--cream-soft); margin-top: 1.2rem; font-weight: bold; opacity: 0.9; }
 
-.teacher-quote-area { grid-column: span 2; margin-top: 2rem; }
-.quote { font-size: 1.6rem; border-left: 14px solid var(--accent-pink); padding-left: 40px; font-style: italic; color: var(--cream-soft); }
+.teacher-quote-area { grid-column: span 2; margin-top: 4rem; text-align: center; }
+.quote { 
+    font-size: 1.5rem; 
+    display: inline-block;
+    border-left: 10px solid var(--accent-pink); 
+    padding: 15px 0 15px 40px; 
+    font-style: italic; 
+    color: var(--cream-soft); 
+    text-align: left;
+    max-width: 900px;
+}
 
-.name-block h3 { font-size: 2.5rem; margin: 1rem 0; color: var(--cream-soft); }
+.name-block h3 { font-size: 2.5rem; margin: 0.5rem 0; color: var(--cream-soft); }
 .sls-label { background: white; color: var(--dusty-blue); padding: 5px 20px; border-radius: 50px; display: inline-block; font-size: 1rem; }
+
+.instructor-bio { margin: 1.5rem 0; }
+.bio-text { line-height: 1.7; color: rgba(255, 255, 255, 0.9); font-size: 1rem; }
+.bio-creds-small { margin-top: 1.2rem; opacity: 0.7; line-height: 1.4; }
+.bio-creds-small small { font-size: 0.8rem; }
 
 /* CTA: Solid with high contrast */
 .cta-box {
@@ -348,6 +364,7 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     .price-column { width: 100%; max-width: 450px; margin: 0 auto; }
     
     .teacher-avatars { flex-direction: column; gap: 3rem; align-items: center; padding-top: 3rem; }
+    .instructor-avatar, .guide-avatar { width: 180px; height: 180px; }
     .teacher-flex { gap: 2rem; }
     .main-title { font-size: 2.8rem; }
     .hero-desc { font-size: 1.1rem; }
