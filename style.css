@@ -262,18 +262,18 @@ section { padding: 45px 0; }
 .btn-outline:hover { background: var(--text-navy); color: white; }
 
 /* Instructor Layout: Grid for Desktop */
-.teacher-flex { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
+#teacher .teacher-flex { 
+    display: grid !important; 
+    grid-template-columns: 1fr 1fr !important; 
     gap: 0 4rem; 
     align-items: center; 
 }
-.teacher-flex .section-title.left { grid-column: 1; grid-row: 1; justify-self: end; width: 100%; max-width: 500px; margin-bottom: 0.5rem; }
-.teacher-flex .name-block { grid-column: 1; grid-row: 2; justify-self: end; width: 100%; max-width: 500px; }
-.teacher-flex .natsu-item { grid-column: 2; grid-row: 1 / span 2; justify-self: start; align-self: start; margin-top: 7.5rem; }
-.teacher-flex .instructor-bio { grid-column: 1; grid-row: 3; justify-self: end; width: 100%; max-width: 500px; margin-top: 1.5rem; }
-.teacher-flex .kurayan-item { grid-column: 2; grid-row: 3; justify-self: start; align-self: center; margin-top: 1rem; }
-.teacher-flex .teacher-quote-area { grid-column: 1 / span 2; grid-row: 4; margin-top: 4rem; text-align: center; }
+#teacher .teacher-flex .section-title.left { grid-column: 1; grid-row: 1; justify-self: end; width: 100%; max-width: 500px; margin-bottom: 0.5rem; }
+#teacher .teacher-flex .name-block { grid-column: 1; grid-row: 2; justify-self: end; width: 100%; max-width: 500px; }
+#teacher .teacher-flex .natsu-item { grid-column: 2; grid-row: 1 / span 2; justify-self: start; align-self: start; margin-top: 7.5rem; }
+#teacher .teacher-flex .instructor-bio { grid-column: 1; grid-row: 3; justify-self: end; width: 100%; max-width: 500px; margin-top: 1.5rem; }
+#teacher .teacher-flex .kurayan-item { grid-column: 2; grid-row: 3; justify-self: start; align-self: center; margin-top: 1rem; }
+#teacher .teacher-flex .teacher-quote-area { grid-column: 1 / span 2; grid-row: 4; margin-top: 4rem; text-align: center; }
 
 .avatar-item { text-align: center; }
 .instructor-avatar, .guide-avatar { 
@@ -383,7 +383,7 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
 
     .teacher-flex .section-title.left { grid-column: auto; grid-row: auto; margin-top: 0; margin-bottom: 0; text-align: center; justify-self: center; }
     .teacher-flex .name-block { grid-column: auto; grid-row: auto; text-align: center; margin-bottom: 0.5rem; justify-self: center; }
-    .teacher-flex .natsu-item { grid-column: auto; grid-row: auto; margin-bottom: 1rem; justify-self: center; }
+    .teacher-flex .natsu-item { grid-column: auto; grid-row: auto; margin-top: 1.5rem; margin-bottom: 1.5rem; justify-self: center; }
     .teacher-flex .instructor-bio { grid-column: auto; grid-row: auto; text-align: left; padding: 0 10px; margin-bottom: 2rem; justify-self: center; max-width: 100%; }
     .teacher-flex .kurayan-item { grid-column: auto; grid-row: auto; margin-bottom: 2.5rem; justify-self: center; }
     .teacher-flex .teacher-quote-area { grid-column: auto; grid-row: auto; margin-top: 1rem; }
