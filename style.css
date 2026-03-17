@@ -103,8 +103,8 @@ section { padding: 45px 0; }
 /* Voice Section: Interactive Cards */
 .voice-grid { 
     display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr)); 
-    gap: 3rem; 
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+    gap: 2rem; 
     margin-top: 4rem;
 }
 .voice-card {
@@ -299,9 +299,46 @@ section { padding: 45px 0; }
 /* Footer */
 footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-align: center; opacity: 0.8; }
 
+/* Burger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+.menu-toggle .bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
 /* Responsive adjustments */
 @media (max-width: 900px) {
+    header { padding: 10px 0; }
     .container { padding: 0 25px; }
+    
+    /* Mobile Navigation */
+    .menu-toggle { display: flex; z-index: 1001; }
+    .nav-links {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        flex-direction: column;
+        background: var(--dusty-blue-dark);
+        width: 80%;
+        height: 100vh;
+        padding: 100px 40px;
+        transition: 0.4s;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.3);
+        gap: 2rem;
+        z-index: 1000;
+    }
+    .nav-links.active { right: 0; }
+    .nav-links li { width: 100%; }
+    .nav-links a { font-size: 1.5rem; display: block; }
+
     .hero-flex, .rpg-content-box, .teacher-flex { grid-template-columns: 1fr; text-align: center; }
     .voice-grid, .lesson-grid, .price-container, .system-grid { grid-template-columns: 1fr; }
     .hero-flex { gap: 4rem; }
@@ -309,4 +346,18 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     .quote { border-left: none; border-top: 8px solid var(--accent-pink); padding: 30px 0 0 0; }
     .cta-btns { flex-direction: column; gap: 1.5rem; }
     .price-column { width: 100%; max-width: 450px; margin: 0 auto; }
+    
+    .teacher-avatars { flex-direction: column; gap: 3rem; align-items: center; padding-top: 3rem; }
+    .teacher-flex { gap: 2rem; }
+    .main-title { font-size: 2.8rem; }
+    .hero-desc { font-size: 1.1rem; }
+    .btn-primary { padding: 1.2rem 2.5rem; font-size: 1.1rem; }
+}
+
+@media (max-width: 500px) {
+    .voice-grid { grid-template-columns: 1fr; }
+    .price-column { padding: 2rem; }
+    .price-value { font-size: 2.5rem; }
+    .cta-box { padding: 60px 20px; }
+    .main-title { font-size: 2.2rem; }
 }
