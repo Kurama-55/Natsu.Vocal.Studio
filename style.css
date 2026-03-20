@@ -530,6 +530,7 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     
     .price-column { padding: 2.5rem 1.2rem !important; width: 100% !important; margin-bottom: 2rem; }
     .system-box { width: 100% !important; padding: 2.5rem 1.2rem !important; margin-top: 2rem; }
+    .system-box h3 { white-space: nowrap !important; font-size: 1.4rem !important; margin-bottom: 2rem !important; }
     .system-grid { gap: 1.5rem !important; }
     
     /* Sub page specific */
