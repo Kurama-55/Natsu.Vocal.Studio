@@ -45,7 +45,9 @@ header {
     z-index: 1000;
 }
 nav { display: flex; justify-content: space-between; align-items: center; height: 90px; gap: 0.5rem; }
-.logo { font-family: 'Outfit', sans-serif; font-size: 1.3rem; color: var(--cream-soft); flex-shrink: 0; }
+.logo { font-family: 'Outfit', sans-serif; font-size: 1.3rem; color: var(--cream-soft); flex-shrink: 0; display: flex; align-items: center; gap: 10px; }
+.logo img { height: 40px; width: auto; border-radius: 8px; }
+.logo a { color: inherit; text-decoration: none; display: flex; align-items: center; gap: 10px; }
 .nav-links { display: flex; list-style: none; gap: 0.7rem; align-items: center; margin: 0; padding: 0; }
 .nav-links a { text-decoration: none; color: white; transition: 0.3s; white-space: nowrap; font-size: 0.9rem; }
 .nav-links a:hover { color: var(--accent-gold); }
@@ -427,6 +429,8 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
 @media (max-width: 850px) {
     header { padding: 10px 0; }
     .container { padding: 0 25px; }
+    .container { padding: 0 20px; }
+    .sub-hero { padding-top: 80px; }
     
     .menu-toggle { display: flex; z-index: 1001; }
     .nav-links {
@@ -439,7 +443,12 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     .nav-links.active { right: 0; }
     .nav-links a { font-size: 1.5rem; }
 
-    .hero-flex, .hero-flex-sub, .rpg-content-box { grid-template-columns: 1fr !important; text-align: center; }
+    .hero-flex, .hero-flex-sub, .rpg-content-box, .price-container, .system-grid, .trial-grid { 
+        grid-template-columns: 1fr !important; 
+        text-align: center; 
+        width: 100% !important;
+    }
+    .rpg-content-box { padding: 1.5rem 1.5rem 2rem !important; gap: 2rem !important; }
     .hero-actions { justify-content: center; }
     
     /* Instructor Mobile Fix */
@@ -468,7 +477,18 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     .hero-flex-sub { flex-direction: column; }
     .hero-flex-sub .hero-text, .hero-flex-sub .hero-image { flex: none; width: 100%; text-align: center; }
     
-    .voice-grid, .lesson-grid, .price-container, .system-grid, .trial-grid { grid-template-columns: 1fr !important; }
+    .price-column { padding: 2.5rem 1.2rem !important; width: 100% !important; margin-bottom: 2rem; }
+    .system-box { width: 100% !important; padding: 2.5rem 1.2rem !important; margin-top: 2rem; }
+    .system-grid { gap: 1.5rem !important; }
+    
+    /* Sub page specific */
+    .trial-price-card { padding: 2.5rem 1.2rem !important; width: 100% !important; box-shadow: 10px 10px 0 var(--dusty-blue-dark) !important; }
+    .price-big { font-size: 3.5rem !important; }
+    .message-card { padding: 2.5rem 1.2rem !important; }
+    .info-card { padding: 2rem 1.2rem !important; }
+    .kurayan-mini { width: 150px !important; height: 150px !important; }
+
+    .voice-grid, .lesson-grid, .price-container, .system-grid, .trial-grid { grid-template-columns: 1fr !important; width: 100% !important; }
     .info-card.wide { grid-column: auto; }
     .info-card.wide.cancel-policy { flex-direction: column; text-align: center; gap: 2rem; }
 
@@ -489,7 +509,10 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     .hero-desc { font-size: 1.0rem; }
     .sub-lead { font-size: 1.05rem; }
     .br-pc { display: none; }
+    .br-mobile { display: block; }
 }
+
+.br-mobile { display: none; }
 
 /* Wrap control for better readability on mobile */
 .text-unit {
