@@ -292,15 +292,17 @@ section { padding: 45px 0; scroll-margin-top: 100px; }
 /* Instructor Layout: Grid for Desktop */
 #teacher .teacher-flex { 
     display: grid !important; 
-    grid-template-columns: 1fr 1fr !important; 
-    gap: 0 4rem; 
+    grid-template-columns: auto auto !important; 
+    justify-content: center;
+    gap: 0 6rem; 
     align-items: center; 
+    margin: 0 auto;
 }
-#teacher .teacher-flex .section-title.left { grid-column: 1; grid-row: 1; justify-self: end; width: 100%; max-width: 500px; margin-bottom: 0.5rem; }
-#teacher .teacher-flex .name-block { grid-column: 1; grid-row: 2; justify-self: end; width: 100%; max-width: 500px; }
-#teacher .teacher-flex .natsu-item { grid-column: 2; grid-row: 1 / span 2; justify-self: start; align-self: start; margin-top: 7.5rem; }
-#teacher .teacher-flex .instructor-bio { grid-column: 1; grid-row: 3; justify-self: end; width: 100%; max-width: 500px; margin-top: 1.5rem; }
-#teacher .teacher-flex .kurayan-item { grid-column: 2; grid-row: 3; justify-self: start; align-self: center; margin-top: 1rem; }
+#teacher .teacher-flex .section-title.left { grid-column: 1; grid-row: 1; text-align: left; justify-self: end; width: 100%; max-width: 600px; margin-bottom: 0.5rem; }
+#teacher .teacher-flex .name-block { grid-column: 1; grid-row: 2; text-align: left; justify-self: end; width: 100%; max-width: 600px; }
+#teacher .teacher-flex .natsu-item { grid-column: 2; grid-row: 1 / span 2; justify-self: start; align-self: start; margin-top: 5.5rem; }
+#teacher .teacher-flex .instructor-bio { grid-column: 1; grid-row: 3; text-align: left; justify-self: end; width: 100%; max-width: 600px; margin-top: 1.5rem; }
+#teacher .teacher-flex .kurayan-item { grid-column: 2; grid-row: 3; justify-self: start; align-self: center; margin-top: 5rem; }
 #teacher .teacher-flex .teacher-quote-area { grid-column: 1 / span 2; grid-row: 4; margin-top: 4rem; text-align: center; }
 
 .avatar-item { text-align: center; }
@@ -405,7 +407,7 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     padding: 10px 30px; border-radius: 50px; font-weight: bold; font-size: 1rem;
 }
 
-.trial-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 6rem; }
+.trial-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-bottom: 6rem; max-width: 900px; margin-left: auto; margin-right: auto; }
 .info-card { 
     background: white; color: var(--text-navy); padding: 3rem; border-radius: 30px;
     text-align: left; transition: 0.3s;
@@ -414,7 +416,6 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     display: flex; 
     align-items: center; 
     gap: 3rem; 
-    grid-column: span 2; 
 }
 .cancel-text { flex: 1; }
 .kurayan-mini { 
@@ -431,6 +432,7 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     .container { padding: 0 25px; }
     .container { padding: 0 20px; }
     .sub-hero { padding-top: 80px; }
+    .logo img { height: 48px !important; } /* モバイルでアイコンを目立たせる */
     
     .menu-toggle { display: flex; z-index: 1001; }
     .nav-links {
@@ -474,8 +476,12 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     }
     .instructor-bio { text-align: left !important; max-width: 100%; }
 
-    .hero-flex-sub { flex-direction: column; }
+    .hero-flex-sub { display: flex !important; flex-direction: column !important; align-items: center; }
+    .hero-flex-sub .hero-text { order: 1; }
+    .hero-flex-sub .hero-image { order: 2; margin-top: 0.5rem; }
     .hero-flex-sub .hero-text, .hero-flex-sub .hero-image { flex: none; width: 100%; text-align: center; }
+    .sub-title { font-size: 2.2rem !important; text-align: center; margin-bottom: 1rem !important; }
+    .sub-lead { font-size: 1.1rem !important; text-align: center; margin-bottom: 0 !important; }
     
     .price-column { padding: 2.5rem 1.2rem !important; width: 100% !important; margin-bottom: 2rem; }
     .system-box { width: 100% !important; padding: 2.5rem 1.2rem !important; margin-top: 2rem; }
