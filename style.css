@@ -429,7 +429,13 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     background: white; color: var(--text-navy); padding: 3rem; border-radius: 30px;
     text-align: left; transition: 0.3s;
 }
-.info-card h3 { margin-top: 0; margin-bottom: 1.2rem; font-size: 1.5rem; color: var(--dusty-blue-dark); }
+.info-card h3 { 
+    margin-top: 0; 
+    margin-bottom: 1.2rem; 
+    font-size: 1.5rem; 
+    color: var(--dusty-blue-dark); 
+    white-space: nowrap;
+}
 .info-card.wide.cancel-policy { 
     display: flex; 
     align-items: center; 
@@ -531,6 +537,7 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     .price-big { font-size: 3.5rem !important; }
     .message-card { padding: 2.5rem 1.2rem !important; }
     .info-card { padding: 2rem 1.2rem !important; }
+    .info-card h3 { font-size: 1.3rem !important; }
     .kurayan-mini { width: 150px !important; height: 150px !important; }
 
     .voice-grid, .lesson-grid, .price-container, .system-grid, .trial-grid { grid-template-columns: 1fr !important; width: 100% !important; }
