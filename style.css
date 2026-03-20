@@ -56,7 +56,7 @@ nav { display: flex; justify-content: space-between; align-items: center; height
 .btn-line-nav:hover { background: #05b34c !important; transform: translateY(-2px); }
 
 /* Sections Common */
-section { padding: 45px 0; }
+section { padding: 45px 0; scroll-margin-top: 100px; }
 
 /* Hero: Deep Blue with Cream Text */
 #hero { background: var(--dusty-blue-dark); border-bottom-left-radius: var(--radius-huge); border-bottom-right-radius: var(--radius-huge); }
@@ -88,6 +88,7 @@ section { padding: 45px 0; }
     display: inline-block;
     font-size: 1.05em;
 }
+.accent-text.blue { background: var(--dusty-blue-dark); padding: 5px 35px; }
 .hero-desc { font-size: 1.4rem; margin-bottom: 4rem; color: rgba(255, 255, 255, 0.9); }
 .btn-primary {
     background: var(--accent-gold); color: var(--text-navy);
@@ -235,9 +236,18 @@ section { padding: 45px 0; }
 .btn-gold-wide:hover { transform: translateY(-3px); box-shadow: 0 20px 40px rgba(234,179,8,0.3); }
 
 /* RPG Section: Solid Highlight */
-#rpg { background: var(--cream-soft); color: var(--text-navy); border-radius: var(--radius-huge); position: relative; z-index: 1; padding: 150px 0; }
+#rpg { background: var(--cream-soft); color: var(--text-navy); border-radius: var(--radius-huge); position: relative; z-index: 1; padding: 60px 0; margin-top: 4rem; }
 #rpg .section-title { color: var(--text-navy); margin-bottom: 2rem; }
-.rpg-content-box { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+.rpg-content-box { 
+    background: white; 
+    padding: 1.5rem 4rem 2rem; 
+    border-radius: var(--radius-mid); 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 6rem; 
+    align-items: center; 
+}
 .hana-img { width: 100%; border-radius: var(--radius-mid); border: 6px solid var(--text-navy); box-shadow: 20px 20px 0 var(--dusty-blue); }
 .rpg-placeholder {
     width: 100%; aspect-ratio: 4/3; background: rgba(0,0,0,0.03); 
@@ -430,6 +440,7 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     .nav-links a { font-size: 1.5rem; }
 
     .hero-flex, .hero-flex-sub, .rpg-content-box { grid-template-columns: 1fr !important; text-align: center; }
+    .hero-actions { justify-content: center; }
     
     /* Instructor Mobile Fix */
     #teacher .teacher-flex { 
@@ -438,8 +449,11 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
         text-align: center;
         gap: 2rem !important;
     }
-    #teacher .teacher-flex .section-title { 
-        margin-bottom: 1rem !important;
+    #teacher .section-title { 
+        margin-bottom: 0.5rem !important;
+    }
+    #teacher .name-block h3 {
+        margin-top: 0 !important;
     }
     #teacher .teacher-flex > * { 
         grid-column: auto !important; 
@@ -460,8 +474,8 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
 
     .main-title { font-size: 2.8rem; }
     .sub-title { font-size: 2.5rem; }
-    .section-title { font-size: 2.8rem; }
-    #teacher .name-block h3 { font-size: 2.2rem; }
+    .section-title { font-size: 3.2rem; }
+    #teacher .name-block h3 { font-size: 2.0rem; }
     .cta-btns { flex-direction: column; gap: 1.5rem; }
 
     .instructor-avatar, .guide-avatar { width: 180px; height: 180px; }
