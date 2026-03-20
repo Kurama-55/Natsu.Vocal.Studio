@@ -507,6 +507,8 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     .hero-flex-sub .hero-text { order: 1; }
     .hero-flex-sub .hero-image { order: 2; margin-top: 0.5rem; }
     .hero-flex-sub .hero-text, .hero-flex-sub .hero-image { flex: none; width: 100%; text-align: center; }
+    .hero-symbol { padding: 20px !important; }
+    .kurayan-symbol-img { max-width: 280px !important; filter: drop-shadow(10px 10px 0 rgba(0,0,0,0.2)) !important; }
     .sub-title { font-size: 2.2rem !important; text-align: center; margin-bottom: 1rem !important; }
     .sub-lead { font-size: 1.1rem !important; text-align: center; margin-bottom: 0 !important; }
     
