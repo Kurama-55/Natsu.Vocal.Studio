@@ -42,10 +42,11 @@ body {
 
 /* Header: Transparent and Elegant */
 header {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(84, 137, 180, 0.95); /* ダスティブルーの半透明 */
     backdrop-filter: blur(10px);
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1000;
 }
@@ -66,7 +67,12 @@ nav { display: flex; justify-content: space-between; align-items: center; height
 section { padding: 45px 0; scroll-margin-top: 100px; }
 
 /* Hero: Deep Blue with Cream Text */
-#hero { background: var(--dusty-blue-dark); border-bottom-left-radius: var(--radius-huge); border-bottom-right-radius: var(--radius-huge); }
+#hero { 
+    background: var(--dusty-blue-dark); 
+    border-bottom-left-radius: var(--radius-huge); 
+    border-bottom-right-radius: var(--radius-huge);
+    padding-top: 135px; /* header(90px) + padding(45px) */
+}
 .hero-flex { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 6rem; align-items: center; }
 .hero-flex-sub { 
     display: flex !important; 
@@ -391,7 +397,7 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
 /* 共通のレスポンシブベース設定は末尾に集約します */
 
 /* Sub Page Styles (Trial Lesson) */
-.sub-hero { padding: 120px 0 60px; }
+.sub-hero { padding: 165px 0 60px; } /* header(90px) + padding(75px) */
 .sub-title { font-size: 3.5rem; color: var(--cream-soft); margin-bottom: 1.5rem; line-height: 1.2; }
 .sub-lead { font-size: 1.2rem; opacity: 0.9; line-height: 1.8; }
 
@@ -423,6 +429,7 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     background: white; color: var(--text-navy); padding: 3rem; border-radius: 30px;
     text-align: left; transition: 0.3s;
 }
+.info-card h3 { margin-top: 0; margin-bottom: 1.2rem; font-size: 1.5rem; color: var(--dusty-blue-dark); }
 .info-card.wide.cancel-policy { 
     display: flex; 
     align-items: center; 
