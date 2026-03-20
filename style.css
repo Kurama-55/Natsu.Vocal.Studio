@@ -429,7 +429,24 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     .nav-links.active { right: 0; }
     .nav-links a { font-size: 1.5rem; }
 
-    .hero-flex, .hero-flex-sub, .rpg-content-box, .teacher-flex { grid-template-columns: 1fr !important; text-align: center; }
+    .hero-flex, .hero-flex-sub, .rpg-content-box { grid-template-columns: 1fr !important; text-align: center; }
+    
+    /* Instructor Mobile Fix */
+    .teacher-flex { 
+        display: flex !important; 
+        flex-direction: column !important; 
+        text-align: center;
+        gap: 2rem !important;
+    }
+    .teacher-flex > * { 
+        grid-column: auto !important; 
+        grid-row: auto !important; 
+        justify-self: center !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+    }
+    .instructor-bio { text-align: left; max-width: 100%; }
+
     .hero-flex-sub { flex-direction: column; }
     .hero-flex-sub .hero-text, .hero-flex-sub .hero-image { flex: none; width: 100%; text-align: center; }
     
@@ -440,12 +457,14 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     .main-title { font-size: 2.8rem; }
     .sub-title { font-size: 2.5rem; }
     .cta-btns { flex-direction: column; gap: 1.5rem; }
+
+    .instructor-avatar, .guide-avatar { width: 180px; height: 180px; }
 }
 
 @media (max-width: 480px) {
     .main-title { font-size: 2.2rem; }
     .sub-title { font-size: 1.9rem; }
-    .cta-title { font-size: 1.8rem; }
+    .cta-title { font-size: 1.6rem; }
     .section-title { font-size: 1.8rem; }
     .hero-desc { font-size: 1.0rem; }
     .sub-lead { font-size: 1.05rem; }
