@@ -17,6 +17,11 @@
     box-sizing: border-box;
 }
 
+html, body { 
+    margin: 0; padding: 0; box-sizing: border-box; 
+    overflow-x: hidden; width: 100%;
+}
+
 body {
     background-color: var(--dusty-blue); /* 全面ダスティブルー */
     color: var(--text-white);
@@ -460,7 +465,20 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
         width: 100% !important;
     }
     .rpg-content-box { padding: 1.5rem 1.5rem 2rem !important; gap: 2rem !important; }
-    .hero-actions { justify-content: center; }
+    .hero-actions { 
+        display: flex !important; 
+        flex-wrap: wrap !important; 
+        justify-content: center !important; 
+        gap: 1rem !important;
+        margin-top: 2rem !important;
+    }
+    .hero-actions .btn-primary, .hero-actions .btn-secondary {
+        flex: 1;
+        min-width: 140px;
+        max-width: 200px;
+        font-size: 1rem !important;
+        padding: 1rem !important;
+    }
     
     /* Instructor Mobile Fix */
     #teacher .teacher-flex { 
