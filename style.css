@@ -237,6 +237,7 @@ section { padding: 45px 0; scroll-margin-top: 100px; }
 }
 .system-box h3 { font-size: 2.2rem; margin-bottom: 4rem; text-align: center; }
 .system-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
+.system-item { display: flex; flex-direction: column; }
 .system-item h4 { color: var(--accent-pink); font-size: 1.4rem; margin-bottom: 1rem; }
 
 .section-cta { text-align: center; margin-top: 5rem; }
