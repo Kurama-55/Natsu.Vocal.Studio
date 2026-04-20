@@ -345,6 +345,18 @@ section { padding: 45px 0; scroll-margin-top: 100px; }
 .bio-text { line-height: 1.7; color: rgba(255, 255, 255, 0.9); font-size: 1rem; }
 .bio-creds-small { margin-top: 1.2rem; opacity: 0.7; line-height: 1.4; }
 .bio-creds-small small { font-size: 0.8rem; }
+.bio-creds-box {
+    display: inline-block;
+    margin-top: 1.2rem;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.82rem;
+    line-height: 1.8;
+    opacity: 0.75;
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.06);
+    font-weight: normal;
+}
 
 /* CTA: Improved with LINE Focus */
 .cta-box {
