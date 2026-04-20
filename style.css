@@ -628,7 +628,6 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     margin-top: 0.4rem;
 }
 .access-map {
-    order: -1;
     height: 260px;
     border-radius: 20px;
     overflow: hidden;
