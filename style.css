@@ -583,11 +583,10 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
 
 /* Access Section */
 .access-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     margin-top: 3rem;
-    align-items: start;
 }
 .access-info {
     display: grid;
@@ -629,9 +628,8 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     margin-top: 0.4rem;
 }
 .access-map {
-    position: sticky;
-    top: 110px;
-    height: 300px;
+    order: -1;
+    height: 260px;
     border-radius: 20px;
     overflow: hidden;
     border: 4px solid var(--text-navy);
@@ -658,16 +656,11 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     background: #05b34c;
     transform: translateY(-2px);
 }
-@media (max-width: 850px) {
-    .access-wrapper {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+@media (max-width: 600px) {
     .access-info {
         grid-template-columns: 1fr;
     }
     .access-map {
-        position: static;
-        height: 240px;
+        height: 220px;
     }
 }
