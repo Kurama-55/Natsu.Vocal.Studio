@@ -225,7 +225,7 @@ section { padding: 45px 0; scroll-margin-top: 100px; }
 .price-features { list-style: none; padding: 0; margin: 0; }
 .price-features li { padding: 12px 0; border-bottom: 1px dotted #ccc; }
 .price-table { width: 100%; margin-top: 2rem; border-collapse: collapse; }
-.price-table td { padding: 15px 0; border-bottom: 1px solid #eee; font-size: 1.45rem; }
+.price-table td { padding: 15px 0; border-bottom: 1px solid #eee; font-size: 1.65rem; }
 .price-table td:last-child { text-align: right; font-weight: 900; color: var(--dusty-blue-dark); }
 .price-note { font-size: 0.9rem; margin-top: 2rem; opacity: 0.7; white-space: nowrap; }
 
