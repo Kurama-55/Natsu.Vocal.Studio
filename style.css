@@ -594,6 +594,127 @@ footer { padding: 60px 0; border-top: 2px solid rgba(255, 255, 255, 0.1); text-a
     white-space: nowrap;
 }
 
+/* Sub Page Content Styles */
+.page-content { padding: 60px 0; }
+.content-section { margin-bottom: 5rem; }
+.content-section h2 { font-size: 2rem; color: var(--accent-gold); margin-bottom: 1.5rem; border-left: 8px solid var(--accent-pink); padding-left: 1.2rem; }
+.content-card {
+    background: white;
+    color: var(--text-navy);
+    padding: 3.5rem;
+    border-radius: var(--radius-mid);
+    border: 4px solid var(--text-navy);
+    box-shadow: 12px 12px 0 var(--dusty-blue-light);
+    margin-bottom: 2rem;
+    line-height: 1.9;
+}
+.content-card h3 { color: var(--dusty-blue-dark); font-size: 1.4rem; margin-top: 0; margin-bottom: 1rem; }
+.content-card p { margin: 0 0 1rem; }
+.content-card p:last-child { margin-bottom: 0; }
+.step-list { list-style: none; padding: 0; margin: 0; }
+.step-list li {
+    background: white;
+    color: var(--text-navy);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 4px solid var(--text-navy);
+    box-shadow: 8px 8px 0 var(--dusty-blue-light);
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 5rem;
+}
+.step-num {
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background: var(--accent-gold);
+    color: var(--text-navy);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 900;
+    flex-shrink: 0;
+}
+.step-list li h3 { margin: 0 0 0.5rem; font-size: 1.3rem; color: var(--dusty-blue-dark); }
+.step-list li p { margin: 0; line-height: 1.8; font-weight: normal; }
+.faq-list { list-style: none; padding: 0; margin: 0; }
+.faq-item {
+    background: white;
+    color: var(--text-navy);
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    border: 4px solid var(--text-navy);
+    box-shadow: 8px 8px 0 var(--dusty-blue-light);
+    margin-bottom: 1.2rem;
+}
+.faq-q { font-size: 1.15rem; font-weight: 900; color: var(--dusty-blue-dark); margin-bottom: 0.8rem; }
+.faq-q::before { content: 'Q. '; color: var(--accent-pink); }
+.faq-a { font-weight: normal; line-height: 1.8; font-size: 1rem; }
+.faq-a::before { content: 'A. '; color: var(--dusty-blue-dark); font-weight: 900; }
+.faq-section-title {
+    font-size: 1.5rem;
+    color: var(--accent-gold);
+    margin: 3rem 0 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--accent-gold);
+}
+.concern-list { list-style: none; padding: 0; margin: 0 0 2rem; }
+.concern-list li { padding: 0.6rem 0; border-bottom: 1px dashed rgba(255,255,255,0.3); font-size: 1.1rem; }
+.concern-list li::before { content: '● '; color: var(--accent-gold); }
+.feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
+.feature-card {
+    background: rgba(255,255,255,0.12);
+    border: 3px solid var(--dusty-blue-light);
+    padding: 2.5rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+}
+.feature-icon { font-size: 3rem; margin-bottom: 1rem; }
+.feature-card h3 { color: var(--accent-gold); margin-bottom: 0.8rem; }
+.feature-card p { font-weight: normal; line-height: 1.8; font-size: 0.95rem; }
+.app-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    color: var(--text-navy);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 4px solid var(--text-navy);
+    box-shadow: 10px 10px 0 var(--dusty-blue-light);
+}
+.app-table th {
+    background: var(--dusty-blue-dark);
+    color: white;
+    padding: 1.2rem 1.5rem;
+    text-align: left;
+    font-size: 1rem;
+}
+.app-table td {
+    padding: 1.1rem 1.5rem;
+    border-bottom: 2px solid #eee;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+.app-table tr:last-child td { border-bottom: none; }
+.app-table tr:nth-child(even) td { background: #f8f9fa; }
+.credential-list { list-style: none; padding: 0; margin: 1rem 0; }
+.credential-list li { padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.15); font-size: 1rem; }
+.credential-list li::before { content: '✦ '; color: var(--accent-gold); }
+.trainer-card {
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.2);
+    padding: 1.5rem 2rem;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+}
+.trainer-card h4 { color: var(--accent-gold); margin: 0 0 0.4rem; font-size: 1.1rem; }
+.trainer-card p { margin: 0; font-weight: normal; font-size: 0.95rem; line-height: 1.7; opacity: 0.9; }
+
 /* Access Section */
 .access-wrapper {
     display: flex;
