@@ -653,7 +653,7 @@ section { padding: 88px 0; scroll-margin-top: 80px; }
     border-radius: 50%;
     border: 2px solid var(--parchment);
     background: white;
-    object-fit: cover;
+    object-fit: contain;
     box-shadow: none;
     transition: var(--transition);
 }
