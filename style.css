@@ -94,6 +94,24 @@ nav {
     background: var(--mist) !important;
     color: var(--midnight) !important;
 }
+.btn-nav-line {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #06C755;
+    color: white !important;
+    text-decoration: none;
+    padding: 7px 14px;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: 0.3s;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+.btn-nav-line:hover { background: #05a847; }
+.line-ico-nav { width: 16px; height: 16px; filter: brightness(0) invert(1); }
 
 /* === SECTIONS COMMON === */
 section { padding: 88px 0; scroll-margin-top: 80px; }
