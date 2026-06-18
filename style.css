@@ -1172,8 +1172,9 @@ footer {
 
     .hero-flex { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
     .hero-image { order: -1; }
-    .hero-symbol { width: 140px; height: 140px; margin: 0 auto; }
+    .hero-symbol { width: 160px; height: 160px; margin: 0 auto; }
     .kurayan-symbol-img { width: 108px; height: 108px; }
+    .hero-symbol .kurayan-symbol-img { width: 175px; height: 175px; margin: -7px; }
     .hero-owl-label { display: none; }
     .hero-eyebrow { text-align: center; }
     .main-title { text-align: center; }
@@ -1206,11 +1207,15 @@ footer {
         margin: 0 auto;
         width: 100%;
     }
+    #teacher .teacher-flex .natsu-item { margin-top: 0; }
+    #teacher .teacher-flex .kurayan-item { margin-top: 0; display: none; }
     .instructor-bio { text-align: left; max-width: 100%; }
     .teacher-quote-area { text-align: left; }
 
-    .hero-flex-sub { flex-direction: column; align-items: flex-start; }
-    .hero-flex-sub .hero-image { display: none; }
+    .hero-flex-sub { flex-direction: column; align-items: center; text-align: center; }
+    .hero-flex-sub .hero-image { flex: 0 0 auto; }
+    .hero-flex-sub .hero-image .kurayan-symbol-img { width: 120px; height: 120px; }
+    .hero-flex-sub .hero-text { text-align: center; }
 
     .access-info { grid-template-columns: 1fr; }
     .access-map { height: 220px; }
