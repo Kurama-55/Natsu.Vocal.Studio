@@ -1027,6 +1027,20 @@ footer {
 }
 .trainer-card p { margin: 0; font-weight: 300; font-size: 0.845rem; line-height: 1.8; color: rgba(245, 240, 232, 0.7); }
 
+/* Light background overrides for dark-section components */
+.page-content .credential-list li {
+    color: rgba(44, 62, 80, 0.78);
+    border-bottom-color: rgba(44, 62, 80, 0.1);
+}
+.page-content .credential-list li::before { color: var(--dawn); }
+.page-content .trainer-card {
+    background: white;
+    border-color: rgba(44, 62, 80, 0.1);
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+}
+.page-content .trainer-card h4 { color: var(--midnight); }
+.page-content .trainer-card p { color: rgba(44, 62, 80, 0.72); }
+
 /* Trial page */
 .trial-info-box { margin-bottom: 40px; text-align: center; }
 .trial-price-card {
