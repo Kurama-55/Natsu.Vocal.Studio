@@ -648,17 +648,30 @@ section { padding: 88px 0; scroll-margin-top: 80px; }
 #teacher .teacher-flex .teacher-quote-area { grid-column: 1 / span 2; grid-row: 4; margin-top: 3.5rem; text-align: center; }
 
 .avatar-item { text-align: center; }
-.instructor-avatar, .guide-avatar {
+.instructor-avatar {
     width: 176px; height: 176px;
     border-radius: 50%;
     border: 2px solid var(--parchment);
     background: white;
     object-fit: cover;
-    object-position: center 70%;
     box-shadow: none;
     transition: var(--transition);
 }
-.instructor-avatar:hover, .guide-avatar:hover { transform: translateY(-6px); }
+.instructor-avatar:hover { transform: translateY(-6px); }
+.guide-avatar-wrap {
+    width: 176px; height: 176px;
+    border-radius: 50%;
+    border: 2px solid var(--parchment);
+    background: white;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.guide-avatar-wrap .guide-avatar {
+    width: 200px;
+    object-fit: contain;
+}
 .avatar-label {
     font-size: 0.75rem;
     color: rgba(44, 62, 80, 0.5);
