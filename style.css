@@ -654,7 +654,7 @@ section { padding: 88px 0; scroll-margin-top: 80px; }
     border: 2px solid var(--parchment);
     background: white;
     object-fit: cover;
-    object-position: center 30%;
+    object-position: center 70%;
     box-shadow: none;
     transition: var(--transition);
 }
