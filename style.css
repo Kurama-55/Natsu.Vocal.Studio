@@ -1171,9 +1171,9 @@ footer {
 
     .hero-flex { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
     .hero-image { order: -1; }
-    .hero-symbol { width: 160px; height: 160px; margin: 0 auto; }
+    .hero-symbol { width: 200px; height: 200px; margin: 0 auto; }
     .kurayan-symbol-img { width: 108px; height: 108px; }
-    .hero-symbol .kurayan-symbol-img { width: 175px; height: 175px; margin: -7px; }
+    .hero-symbol .kurayan-symbol-img { width: 160px; height: 160px; margin: 0; }
     .hero-owl-label { display: none; }
     .hero-eyebrow { text-align: center; }
     .main-title { text-align: center; }
