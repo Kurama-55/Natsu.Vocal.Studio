@@ -257,6 +257,8 @@ section { padding: 88px 0; scroll-margin-top: 80px; }
     line-height: 2.8;
     letter-spacing: 0.04em;
     max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
 }
 .empathy-text .highlight { color: var(--dawn); }
 .empathy-resolve {
@@ -264,9 +266,12 @@ section { padding: 88px 0; scroll-margin-top: 80px; }
     font-size: 0.88rem;
     color: rgba(44, 62, 80, 0.6);
     line-height: 2.2;
-    border-left: 2px solid var(--parchment);
-    padding-left: 20px;
+    border-left: none;
+    padding-left: 0;
     max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 /* === GUIDE SECTION === */
@@ -275,7 +280,9 @@ section { padding: 88px 0; scroll-margin-top: 80px; }
     display: flex;
     gap: 60px;
     align-items: flex-start;
+    justify-content: center;
 }
+
 .guide-owl {
     flex: 0 0 110px;
     text-align: center;
@@ -301,6 +308,7 @@ section { padding: 88px 0; scroll-margin-top: 80px; }
     line-height: 2.8;
     font-weight: 600;
     letter-spacing: 0.04em;
+    text-align: center;
 }
 .guide-quote .em { color: var(--mist); }
 
