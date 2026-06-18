@@ -232,8 +232,8 @@ section { padding: 88px 0; scroll-margin-top: 80px; }
 }
 .kurayan-symbol-img:hover { transform: scale(1.04); }
 .hero-symbol .kurayan-symbol-img {
-    width: 210px;
-    height: 210px;
+    width: 200px;
+    height: 200px;
     object-fit: contain;
     margin: 0;
 }
