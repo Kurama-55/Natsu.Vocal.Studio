@@ -225,14 +225,19 @@ section { padding: 88px 0; scroll-margin-top: 80px; }
     box-shadow: inset 0 0 0 6px var(--midnight);
 }
 .kurayan-symbol-img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    transition: var(--transition);
+}
+.kurayan-symbol-img:hover { transform: scale(1.04); }
+.hero-symbol .kurayan-symbol-img {
     width: 230px;
     height: 230px;
     object-fit: cover;
     object-position: center center;
     margin: -15px;
-    transition: var(--transition);
 }
-.kurayan-symbol-img:hover { transform: scale(1.04); }
 .hero-owl-label {
     font-size: 0.68rem;
     color: rgba(163, 191, 213, 0.6);
