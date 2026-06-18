@@ -1295,7 +1295,10 @@ footer {
     .sub-lead { font-size: 0.845rem; }
     .br-pc { display: none; }
     .br-mobile { display: block; }
-    .empathy-text { font-size: 0.92rem; line-height: 2.4; }
+    .empathy-text { font-size: 0.92rem; line-height: 2.4; text-align: center; margin: 0 auto; }
+    .empathy-resolve { text-align: center; margin-left: auto; margin-right: auto; }
     section { padding: 52px 0; }
-    .guide-flex { flex-direction: column; gap: 20px; }
+    .guide-flex { flex-direction: column; gap: 20px; align-items: center; }
+    .guide-quote { text-align: center; }
+    .guide-body { width: 100%; text-align: center; }
 }
