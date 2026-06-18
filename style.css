@@ -1041,6 +1041,30 @@ footer {
 .page-content .trainer-card h4 { color: var(--midnight); }
 .page-content .trainer-card p { color: rgba(44, 62, 80, 0.72); }
 
+/* Price column on light background */
+.page-content .price-column {
+    background: white;
+    border-color: rgba(44, 62, 80, 0.1);
+    color: var(--midnight);
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+}
+.page-content .price-column.popular {
+    border-color: var(--dawn);
+    background: rgba(113, 156, 192, 0.05);
+}
+.page-content .price-header {
+    color: var(--midnight);
+    border-bottom-color: rgba(44, 62, 80, 0.1);
+}
+.page-content .price-value { color: var(--midnight); }
+.page-content .price-features li {
+    color: rgba(44, 62, 80, 0.78);
+    border-bottom-color: rgba(44, 62, 80, 0.08);
+}
+.page-content .price-table td { color: var(--midnight); border-bottom-color: rgba(44, 62, 80, 0.08); }
+.page-content .price-table td:last-child { color: var(--dawn); }
+.page-content .price-note { color: rgba(44, 62, 80, 0.5); }
+
 /* Trial page */
 .trial-info-box { margin-bottom: 40px; text-align: center; }
 .trial-price-card {
