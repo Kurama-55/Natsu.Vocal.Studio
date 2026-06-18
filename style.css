@@ -216,8 +216,8 @@ section { padding: 88px 0; scroll-margin-top: 80px; }
     align-items: center;
 }
 .hero-symbol {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     overflow: hidden;
     background: var(--midnight);
