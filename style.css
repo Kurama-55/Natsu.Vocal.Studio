@@ -232,11 +232,11 @@ section { padding: 88px 0; scroll-margin-top: 80px; }
 }
 .kurayan-symbol-img:hover { transform: scale(1.04); }
 .hero-symbol .kurayan-symbol-img {
-    width: 240px;
-    height: 240px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
-    object-position: center 30%;
-    margin: -20px;
+    object-position: center top;
+    margin: -10px -10px -10px -10px;
 }
 .hero-owl-label {
     font-size: 0.68rem;
