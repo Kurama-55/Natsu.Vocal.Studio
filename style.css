@@ -852,6 +852,16 @@ footer {
     align-items: center;
 }
 .copyright { font-size: 0.75rem; color: rgba(163, 191, 213, 0.4); font-weight: 400; }
+.footer-legal-link { font-size: 0.75rem; color: rgba(163, 191, 213, 0.7); text-decoration: none; }
+.footer-legal-link:hover { color: var(--accent-gold); }
+
+/* === LEGAL PAGE === */
+.legal-notice { border-left: 3px solid var(--accent-gold); }
+.legal-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+.legal-table th, .legal-table td { padding: 16px; border-bottom: 1px solid rgba(44, 62, 80, 0.12); text-align: left; vertical-align: top; line-height: 1.8; }
+.legal-table th { width: 30%; min-width: 130px; color: var(--midnight); font-weight: 600; background: rgba(44, 62, 80, 0.035); }
+.legal-table td { color: rgba(44, 62, 80, 0.82); }
+.legal-table a { color: var(--accent-gold); }
 
 /* === BURGER MENU === */
 .menu-toggle {
@@ -1287,6 +1297,9 @@ footer {
     .btn-line { min-width: 260px; padding: 14px 28px; }
 
     footer .footer-content { flex-direction: column; gap: 8px; text-align: center; }
+    .legal-table th, .legal-table td { display: block; width: auto; min-width: 0; }
+    .legal-table th { padding-bottom: 4px; }
+    .legal-table td { padding-top: 4px; }
     .voice-grid { grid-template-columns: 1fr; }
 }
 
