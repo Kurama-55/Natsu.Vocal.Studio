@@ -14,3 +14,6 @@
 /* Full scene for the introduction; keep both figures visible at every width. */
 .intro-portrait.activity-welcome{width:100%;max-width:none;min-height:0;aspect-ratio:3/2;align-self:center}
 .intro-portrait.activity-welcome>img{position:static;display:block;width:100%;max-width:100%;height:auto}
+
+/* Hide only the baked-in caption over its plain aqua footer; artwork stays intact. */
+.seed-desktop::after{content:"";position:absolute;right:2.9%;bottom:3.6%;width:18%;height:3.4%;background:linear-gradient(110deg,#dbf0f5,#dbf2f6);pointer-events:none}
