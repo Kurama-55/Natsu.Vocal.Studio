@@ -1,0 +1,16 @@
+/* 本人確認に合わせ、本文と大切な条件を縮めずに読める大きさへ。 */
+body #main :is(p,li,td,th,dt,dd){font-size:18px!important;line-height:1.9}
+body #main h1{font-size:48px;line-height:1.55}
+body #main h2{font-size:34px;line-height:1.65}
+body #main h3{font-size:24px;line-height:1.6}
+body #main :is(.nv-kicker,.nv-small,.price-note,.note,.section-label,.voice-sub,.voice-author,.voice-sub-label,figcaption){font-size:16px!important;line-height:1.8;color:#3d514a}
+body #main :is(.credential-list li,.trainer-card p,.price-features li,.concern-list li,.voice-text,.voice-content p){font-size:18px;line-height:1.9;color:#3d514a}
+body #main :is(.nv-intro,.nv-office-lead){font-size:20px!important;line-height:1.9}
+body #main :is(.nv-text-link,.btn-line-small){font-size:17px;line-height:1.6}
+body #main .btn-line-small{background:#214f46;color:white;padding:12px 20px}
+body #main .price-value span{font-size:18px}
+body #main .nv-hero-note{font-size:18px;color:#3d514a}
+body .nv-footer :is(p,a){font-size:16px;line-height:1.8}
+body .nv-mobile-cta span{font-size:14px}
+body .nv-mobile-cta a{font-size:16px;padding:12px 20px}
+@media(max-width:680px){body #main h1{font-size:36px}body #main h2{font-size:29px}body #main h3{font-size:22px}body #main :is(.nv-intro,.nv-office-lead){font-size:20px}body #main .nv-prices article{padding:24px}body .nv-footer{padding-bottom:125px}}

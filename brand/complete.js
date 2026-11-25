@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-open-review]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('review-full').open=true}));

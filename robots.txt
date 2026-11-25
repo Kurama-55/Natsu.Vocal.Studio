@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://natsu-vocal-studio.jp/sitemap.xml

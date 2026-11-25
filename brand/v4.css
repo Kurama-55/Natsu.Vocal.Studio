@@ -1,0 +1,91 @@
+/* LP見本の強い文字とレイヤーを、読むためのWebページへ移す。 */
+:root{--nv-blue:#e4eef3;--nv-white:#fffefa}
+body{background:#fffefa}
+#main p,#main li{color:#344e46}
+#main :is(h1,h2,h3){font-weight:700;letter-spacing:.025em}
+.v4-hero{position:relative;padding:64px 0 58px;isolation:isolate;overflow:hidden;background:#fffefa}
+.v4-hero>.nv-wrap{position:relative}
+.v4-heading{position:relative;z-index:2}
+#main .v4-hero h1{font-size:clamp(40px,4.6vw,64px)!important;line-height:1.42;margin:0 0 26px;letter-spacing:.02em;font-weight:750}
+#main .v4-hero .v4-lead{font-size:20px!important;line-height:1.9;max-width:44em;margin:0}
+.v4-heading .nv-kicker{color:#214f46;margin-bottom:20px}
+.v4-heading h1 span{background:#fffefa;box-shadow:14px 0 0 #fffefa,-5px 0 0 #fffefa;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.v4-scene{margin:0;position:relative}.v4-scene img{display:block;width:100%;height:auto;border-radius:0}
+.v4-home .v4-heading,.v4-lesson .v4-heading{max-width:1000px;margin:auto}
+.v4-home .v4-scene,.v4-lesson .v4-scene{margin-top:-65px;z-index:0}
+.v4-home .v4-scene img,.v4-lesson .v4-scene img{aspect-ratio:1.95;object-fit:cover;object-position:center 57%}
+.v4-home-intro{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;position:relative;max-width:920px;margin:-18px auto 0;background:#fffefa;padding:34px 42px 0}
+.v4-home-intro>div{justify-self:end}.v4-home-intro p{margin-bottom:16px}.v4-home-intro .nv-small{margin-top:12px}
+.v4-lesson{padding-bottom:0;background:linear-gradient(#fffefa 65%,#e4eef3 65%)}.v4-lesson .v4-lead{display:inline-block;background:#fffefa;padding:6px 12px 6px 0}
+.v4-cut{background-image:url('natsu-cutouts.png');background-repeat:no-repeat;background-size:300% 200%;aspect-ratio:1;width:100%;position:relative}
+.v4-cut-listen{background-position:0 0}.v4-cut-sing{background-position:50% 0}.v4-cut-lesson{background-position:100% 0}.v4-cut-calendar{background-position:0 100%}.v4-cut-access{background-position:50% 100%}.v4-cut-chat{background-position:100% 100%}
+/* 料金は文字を主役に、カレンダーの人物は面の境界へ。 */
+.v4-pricing>.nv-wrap{display:grid;grid-template-columns:1.25fr .75fr;align-items:center;column-gap:20px}
+.v4-pricing::before{content:'';position:absolute;inset:42% 0 0;background:#e8eee2;z-index:-1}
+.v4-pricing .v4-cut{grid-column:2;grid-row:1 / 3;width:380px;max-width:100%;justify-self:end}
+.v4-price-lead{grid-column:1;grid-row:2;margin-top:35px}.v4-price-lead>p{margin:0}
+.v4-price-lead>p:last-child{display:flex;gap:30px;align-items:baseline;flex-wrap:wrap}
+.v4-price-lead strong{font-size:52px;color:#214f46;font-weight:750;line-height:1.5}.v4-price-lead strong:first-child{font-size:34px}.v4-price-lead strong span{font-size:24px}
+/* 講師は枠のない人物と名前、経歴は本文で。 */
+.v4-teacher{background:linear-gradient(#fffefa 52%,#e4eef3 52%)}.v4-teacher>.nv-wrap{display:grid;grid-template-columns:1.3fr .7fr;align-items:center}.v4-teacher .v4-cut{grid-column:2;grid-row:1 / 3;width:400px;max-width:100%}.v4-teacher-name{grid-column:1;align-self:end;padding-top:24px}.v4-teacher-name p:first-child{font-weight:700;font-size:26px!important}.v4-teacher-name p{margin-bottom:8px}
+.v4-about>.nv-wrap{display:grid;grid-template-columns:.9fr 1.1fr;align-items:center;gap:50px}.v4-about .v4-cut{width:470px;max-width:100%}.v4-about{background:linear-gradient(90deg,#e4eef3 40%,#fffefa 40%)}
+.v4-voice{text-align:center;background:#e8eee2}.v4-voice .v4-heading{max-width:850px;margin:auto}.v4-voice .v4-cut{width:250px;margin:15px auto -90px}.v4-voice{padding-bottom:90px}.v4-voice +section{position:relative;background:#fffefa}
+.v4-access>.nv-wrap{display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:25px}.v4-access .v4-cut{width:350px;max-width:100%}.v4-access{background:linear-gradient(#fffefa 65%,#e4eef3 65%)}
+.v4-faq>.nv-wrap{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:20px}.v4-faq .v4-cut{width:410px;max-width:100%}.v4-faq{background:#f0f5f7}
+.v4-trial>.nv-wrap{max-width:1200px}.v4-trial .v4-heading{text-align:center;max-width:1000px;margin:auto}.v4-trial .v4-scene{width:86%;margin:36px auto -85px}.v4-trial{padding-bottom:110px;background:linear-gradient(#fffefa 64%,#e8eee2 64%)}.v4-trial .v4-scene img{aspect-ratio:1.8;object-fit:cover;object-position:center 55%}
+.v4-office .v4-heading{max-width:1080px;margin:auto}.v4-office-scene{margin:-45px 0 0}.v4-office-scene img{width:100%;display:block;border-radius:0;max-height:620px;object-fit:cover;object-position:center 55%}.v4-office-intro{display:grid;grid-template-columns:1fr 1fr;gap:45px;background:#fffefa;position:relative;margin:-30px 35px 0;padding:35px 40px 0}.v4-office-intro h2{font-size:32px!important}.v4-office-intro p{margin:0}
+/* 本文はすべてをカードにせず、見出しと文章の余白を主役に。 */
+.nv-sub .content-card,.nv-sub .message-card{border:0;border-radius:0;background:transparent;padding:16px 0;box-shadow:none}
+.nv-sub .content-section{margin-bottom:76px}.nv-sub .content-section>h2{margin-bottom:25px}
+.nv-sub .content-section .content-card{max-width:850px}.nv-sub .content-card p:last-child{margin-bottom:0}
+.nv-sub .feature-card{background:transparent;border-radius:0;box-shadow:none;border-width:0 0 1px}.nv-sub .feature-grid{gap:30px}
+.nv-sub .trainer-card{border-radius:0;border:0;border-left:3px solid #b7d1df;background:transparent;box-shadow:none;padding:15px 25px;margin-bottom:28px}
+.nv-sub .message-card{max-width:900px;margin:auto}.nv-sub .message-area{margin:50px 0}
+.nv-sub .instructor-avatar{border-radius:0;background:transparent;box-shadow:none}
+.nv-home .nv-teacher>.v4-cut{max-width:450px;width:100%;margin:auto}
+.nv-home .nv-access img{border-radius:0}.nv-home .nv-ai img{border-radius:0}
+.nv-art{background-image:url('natsu-cutouts.png')}
+.nv-page-instructor .instructor-layout{display:block}.nv-page-instructor .instructor-avatar{display:none}
+.nv-page-instructor .instructor-info{max-width:850px}
+.nv-page-access .access-map{position:static;border-radius:0}
+.nv-page-voice .voice-card{border-radius:0;border:0;border-bottom:1px solid #d4dfd1;background:transparent;box-shadow:none}
+.nv-page-voice .voice-grid{gap:40px}.nv-page-voice .voice-img{border-radius:0}
+.nv-page-faq .faq-item{border:0;border-bottom:1px solid #c9d8d0;border-radius:0;background:transparent;box-shadow:none}.nv-page-faq .faq-q{background:transparent;border-radius:0}
+.nv-home .nv-contact,.nv-sub #cta{background:#e4eef3}
+.nv-sub .cta-box{background:transparent;box-shadow:none;border:0}
+.nv-sub .cta-icon.nv-cta-illustration{display:none}
+.nv-sub .nv-illustration-slot>.nv-art{background-image:url('natsu-cutouts.png')}
+.nv-ai-page .nv-ai-case-art{background:transparent}.nv-ai-page .nv-ai-case-art .nv-art{width:100%;height:100%}
+.nv-ai-page .nv-ai-topics{max-width:100%}.nv-ai-page .nv-ai-case{max-width:1100px}
+.nv-footer nav a{font-size:16px}.nv-brand small{font-size:14px}.nv-links a{font-size:16px}.nv-nav{gap:18px}.nv-links{gap:19px}
+.nv-mobile-cta span{font-size:14px}.nv-mobile-cta a{font-size:16px}
+@media(max-width:1150px){.nv-nav{padding:0 22px}.nv-links{gap:14px}.nv-links a{font-size:14px}.v4-price-lead strong{font-size:46px}}
+@media(max-width:950px){#main .v4-hero h1{font-size:42px!important}.v4-teacher>.nv-wrap,.v4-pricing>.nv-wrap{grid-template-columns:1.3fr .7fr}.v4-home .v4-scene,.v4-lesson .v4-scene{margin-top:-20px}.v4-office-scene{margin-top:0}.nv-links a{font-size:17px}.v4-office-intro{margin:0;padding:30px 0 0}}
+@media(max-width:680px){
+ .v4-hero{padding:34px 0 40px}
+ #main .v4-hero h1{font-size:clamp(30px,8.3vw,38px)!important;line-height:1.5;margin-bottom:20px;letter-spacing:0}
+ #main .v4-hero .v4-lead{font-size:18px!important}
+ .v4-heading .nv-kicker{margin-bottom:14px}
+ .v4-home .v4-scene,.v4-lesson .v4-scene{margin:5px -20px 0}
+ .v4-home .v4-scene img,.v4-lesson .v4-scene img{aspect-ratio:1.35;object-position:55% center}
+ .v4-home-intro{display:block;padding:26px 0 0;margin:0}.v4-home-intro>div{margin-top:24px}.v4-home-intro .nv-button{width:100%}
+ .v4-pricing>.nv-wrap{grid-template-columns:1.15fr .85fr;gap:0}
+ .v4-pricing .v4-heading{grid-column:1 / -1}.v4-pricing .v4-cut{grid-column:2;grid-row:2;width:180px;align-self:end;margin-bottom:-10px}
+ .v4-price-lead{grid-column:1;grid-row:2;margin-top:28px}.v4-price-lead>p:last-child{display:block}
+ .v4-price-lead strong{display:block;font-size:40px;white-space:nowrap}.v4-price-lead strong:first-child{font-size:27px}.v4-price-lead strong span{font-size:22px}
+ .v4-teacher>.nv-wrap{grid-template-columns:1fr 1fr}.v4-teacher .v4-heading{grid-column:1 / -1}.v4-teacher .v4-cut{grid-column:2;grid-row:2;width:190px;max-width:none;justify-self:end}.v4-teacher-name{grid-column:1;grid-row:2;align-self:center;padding:10px 0}.v4-teacher-name p:first-child{font-size:22px!important}.v4-teacher-name p{font-size:17px!important}
+ .v4-about>.nv-wrap{display:flex;flex-direction:column-reverse;gap:10px;align-items:stretch}.v4-about .v4-cut{width:260px;margin:auto}.v4-about{background:linear-gradient(#fffefa 57%,#e4eef3 57%)}
+ .v4-voice{text-align:left;padding-bottom:45px}.v4-voice .v4-cut{width:170px;margin:-10px 0 -45px auto}
+ .v4-access>.nv-wrap{display:block}.v4-access .v4-cut{width:210px;margin:5px 0 -40px auto}.v4-access{padding-bottom:40px}
+ .v4-faq>.nv-wrap{display:block}.v4-faq .v4-cut{width:280px;max-width:90%;margin:12px auto -30px}
+ .v4-trial{padding-bottom:55px}.v4-trial .v4-heading{text-align:left}.v4-trial .v4-scene{width:auto;margin:20px -20px -30px}.v4-trial .v4-scene img{aspect-ratio:1.35;object-position:55% center}
+ .v4-office-scene{margin:10px -20px 0}.v4-office-scene img{aspect-ratio:auto;height:auto;object-fit:contain;object-position:center}
+ .v4-office-intro{display:block;padding-top:28px;margin:0}.v4-office-intro h2{font-size:28px!important;margin-bottom:20px}
+ .nv-sub .content-section{margin-bottom:52px}.nv-sub .content-card{padding:5px 0}
+ .nv-sub .trainer-card{padding:10px 0 10px 20px}
+ .nv-home .nv-ai>.nv-wrap{grid-template-columns:1fr}.nv-home .nv-ai img{width:180px;justify-self:center}.nv-home .nv-ai h2{font-size:27px}
+ .nv-home .voice-card{display:block}.nv-home .voice-img{width:110px;height:110px;margin-bottom:18px}
+ .nv-home .voice-content{padding:0}.nv-home .nv-teacher>.v4-cut{width:300px;max-width:100%}
+ .nv-sub .feature-grid{gap:22px}.nv-sub .feature-card{padding:20px 0}
+ .nv-brand small{font-size:12px}.nv-brand{font-size:15px}.nv-menu{font-size:16px}
+}

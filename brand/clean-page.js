@@ -1,0 +1,1 @@
+document.querySelectorAll('a[href="#q-profile"],a[href="#q-profile-phone"]').forEach(link=>link.addEventListener('click',()=>{const section=document.getElementById(link.hash.slice(1));const details=section?.querySelector('details');if(details)details.open=true;}));

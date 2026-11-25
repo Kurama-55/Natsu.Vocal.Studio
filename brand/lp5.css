@@ -1,0 +1,11 @@
+/* 本人が選んだLPの文字・構図を保持。画像を切り抜かず全体表示する。 */
+.lp5-hero{background:#fcf9f1;margin:0;padding:0}
+.lp5-artwork{position:relative;width:100%;max-width:948px;margin:0 auto}
+.lp5-artwork>img{display:block;width:100%;height:auto;max-width:none;object-fit:contain}
+.lp5-hotspot{position:absolute;left:4%;width:92%;display:block;border-radius:14px;min-height:44px}
+.lp5-hotspot:focus-visible{outline:4px solid #8a5e19;outline-offset:5px;background:#fff2}
+.lp5-hotspot:hover{background:#fff1}
+.lp5-sr{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important}
+.lp5-details-anchor{scroll-margin-top:105px}
+.lp5-hero~.nv-section:first-of-type{padding-top:70px}
+@media(max-width:680px){.lp5-artwork{max-width:none}.lp5-details-anchor{scroll-margin-top:90px}.lp5-hotspot{border-radius:8px}}
