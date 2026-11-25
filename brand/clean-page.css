@@ -41,3 +41,30 @@
  .q-phone-guide .q-hero-instructor .q-hero-art,.q-phone-guide .q-hero-ai-support .q-hero-art{width:150%;left:-50%}.pc-original .comp-row,.pc-original .comp-row.single{display:block}
  .q-closing{padding:34px 26px 220px;min-height:0;display:block}.q-closing>div{width:100%}.q-closing h2{font-size:29px;line-height:1.65;margin-bottom:18px}.q-closing p{font-size:21px;line-height:1.85}.q-close-price strong{font-size:27px}.q-button{font-size:23px;min-height:60px;padding:14px 24px;border-radius:16px}.q-closing>img{width:200px;height:220px;right:4%;bottom:0}.q-closing .q-close-note{font-size:20px}
 }
+/* 2026-11-25 表示の仕上げ。絵と文言はそのまま、余白・段の位置・読みやすさだけを整える */
+.q-text-link{display:inline-flex;align-items:center;min-height:44px}
+body:not(:has(.nv-mobile-cta)){padding-bottom:0}
+/* 体験の感想：絵に焼き込まれた注記だけを同じ床の色の小片で覆う（元の絵は変更しない） */
+.comp-panel[data-comp="review-trial"]::after{content:"";position:absolute;left:66.6667%;top:58.5895%;width:24.8945%;height:9.6444%;background:url("complete/review-trial-cover.webp") center/100% 100% no-repeat;pointer-events:none}
+@media(min-width:1024px){
+ .q-hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(255,253,248,.62) 0,rgba(255,253,248,.42) 28%,rgba(255,253,248,0) 46%)}
+ .q-hero-trial .q-hero-note{max-width:10.5em;text-wrap:balance;word-break:keep-all}
+ .q-section:not(.q-wash)+.q-section:not(.q-wash){padding-top:18px}
+ .q-split{display:grid;grid-template-columns:40% minmax(0,1fr);column-gap:5%;align-items:start}
+ .q-split>h2{grid-row:1/span 12;margin:0}.q-split>:not(h2){grid-column:2}.q-split>.q-button{justify-self:start}.q-split>p:last-child{margin-bottom:0}
+ .q-split-letter{grid-template-columns:27% minmax(0,1fr)}.q-split-letter .q-letter{max-width:none;margin:0}.q-split-letter .q-letter p{text-wrap:pretty}
+ .q-wash .q-rates td{background:#fffdf8}.q-wash .q-rates tr>th:first-child,.q-wash .q-rates th[scope="row"]{background:#dcebee}
+ .q-feature-link .q-feature-cta{justify-self:start;display:inline-flex;align-items:center;min-height:64px;padding:12px 30px;border:2px solid #174f49;border-radius:20px;font-size:26px;font-weight:700;line-height:1.5}
+ .q-feature-link:hover .q-feature-cta{background:#174f49;color:#fff}
+ .q-editorial-links a{align-items:center}.q-editorial-links span::after{content:"›";margin-left:18px;font-weight:700}.q-editorial-links a:hover strong{text-decoration:underline;text-underline-offset:7px}
+ .q-page .q-voice-lead{font-size:34px;font-weight:700;line-height:1.6;margin:0 0 18px;color:#174f49}.q-voice .q-voice-lead+h2{font-size:27px;margin-bottom:24px}.q-voice .q-voice-lead+h2 .q-review-role{font-size:23px;font-weight:400;margin-top:2px}
+ .nv-footer .u-inner{max-width:min(1075px,84vw)}.nv-footer p{font-size:19px}.nv-footer small{font-size:17px}
+}
+@media(min-width:1280px){.nv-links{gap:22px}.nv-links>a{font-size:18px}.nv-links>.u-button{font-size:18px}.nv-brand small{font-size:15px}}
+@media(max-width:1023px){
+ .pc-original .u-details summary{text-wrap:balance;word-break:auto-phrase}
+ .q-closing p,.q-phone-guide p{word-break:auto-phrase;text-wrap:pretty}
+ .pc-original .comp-panel+.comp-panel{margin-top:24px}
+}
+@media(max-width:760px){.nv-brand{min-height:44px}.nv-footer nav{display:grid;grid-template-columns:1fr 1fr;gap:4px 18px}.nv-footer nav a[href$="tokushoho.html"]{grid-column:1/-1}}
+@media(min-width:1024px) and (max-width:1250px){.q-credentials{gap:18px}.q-credentials li{font-size:20px;padding-right:12px;word-break:auto-phrase;text-wrap:balance}.q-hero-trial .q-hero-note{font-size:22px}}
