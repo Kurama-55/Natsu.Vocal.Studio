@@ -10,3 +10,7 @@
 .ai-work-scene{aspect-ratio:986/1024}.ai-work-scene>img{width:155.781%;left:-55.781%;top:0}
 @media(min-width:701px){.intro-portrait{width:100%;min-width:0;aspect-ratio:auto}}
 .live-upcoming p span{display:inline-block;white-space:nowrap}
+
+/* Full scene for the introduction; keep both figures visible at every width. */
+.intro-portrait.activity-welcome{width:100%;max-width:none;min-height:0;aspect-ratio:3/2;align-self:center}
+.intro-portrait.activity-welcome>img{position:static;display:block;width:100%;max-width:100%;height:auto}
