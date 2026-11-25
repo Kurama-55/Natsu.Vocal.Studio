@@ -34,8 +34,11 @@ test('承認済みの料金・感想・FAQ・短いURLと公式用Clarityを保�
  assert(read('script.js').includes('zifepv8fl1'));assert(read('brand/analytics.js').includes('zifepv8fl1'));assert(!read('brand/analytics.js').includes('zgj8in7j7z'));
  assert(read('links/index.html').includes('https://www.dance-studio-seed.com/'));
 });
-test('PCとスマホの発声の3場面、読みやすい表、ナツの活動への入口を保持する',()=>{
- const h=read('index.html');for(const asset of ['method-listen','method-exercise','method-song'])assert.equal((h.match(new RegExp('src="brand/clean-page/'+asset+'\\.webp"','g'))||[]).length,2,asset);
+test('PCとスマホで共通の発声の3場面、読みやすい表、ナツの活動への入口を保持する',()=>{
+ const h=read('index.html');for(const asset of ['method-listen','method-exercise','method-song'])assert.equal((h.match(new RegExp('src="brand/clean-page/'+asset+'\\.webp"','g'))||[]).length,1,asset);
  assert(read('brand/clean-page.css').includes('.q-rates th[scope="row"]{background:#e2eff1}'));
  for(const p of pages)assert(read(p+'.html').includes('href="links/"'),p);
+});
+test('全ページがPC・スマホ共通の本文を使い、文字を焼き込んだ旧スマホ版へ戻らない',()=>{
+ for(const p of pages){const h=read(p+'.html');assert(!h.includes('pc-original')&&!h.includes('brand/complete/')&&!h.includes('brand/lp/')&&!h.includes('brand/unified/'),p);assert.equal((h.match(/<h1[ >]/g)||[]).length,1,p);assert(!/イメージです/.test(h),p);}
 });
