@@ -67,7 +67,7 @@ body:not(:has(.nv-mobile-cta)){padding-bottom:0}
 .q-rates th[scope="row"]{background:#e2eff1}
 .q-rates tr:not(:first-child)>th[scope="row"]{border-left:1px solid var(--line)}
 .q-rates td{text-align:right;white-space:nowrap}.q-rates strong{font-size:var(--fs-price)}.q-rates th span{font-size:var(--fs-note);font-weight:400}
-.q-rate-note{margin-top:20px!important}
+.q-rate-note{margin-top:20px!important}.q-minutes{display:inline-block;margin-left:.55em;padding:.12em .7em;border-radius:999px;background:#d3e7ea;color:var(--ink);font-size:.6em;line-height:1.6;vertical-align:.18em;letter-spacing:.03em}
 .q-conditions{margin:0;border-top:1px solid var(--line)}.q-conditions>div{display:grid;grid-template-columns:42% 1fr;gap:24px;padding:22px 0;border-bottom:1px solid var(--line)}.q-conditions dt{font-weight:700;color:var(--ink)}.q-conditions dd{margin:0;line-height:1.75}
 /* コーチ */
 .q-coach-pair{display:grid;grid-template-columns:1fr 1fr;gap:28px}.q-coach-pair>div{background:var(--paper);border-radius:var(--r);padding:clamp(24px,2.6vw,36px)}.q-finish{margin-top:34px!important}
